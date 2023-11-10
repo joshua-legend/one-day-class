@@ -1,0 +1,111 @@
+body {
+    margin : 0;
+}
+div {
+    box-sizing : border-box;
+}
+@font-face {
+    font-family:'BM';
+    src:url('bm.otf');
+}
+*{
+    font-family: 'BM';
+}
+
+.main-background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) ), url(images/coding.jpg);
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-title{
+    font-size: 90px;
+    color: ghostwhite;
+}
+.main-description{
+    font-size: 40px;
+    color: ghostwhite;
+}
+
+.buy-button {
+    padding: 20px 40px; /* 상하좌우 패딩 */
+    font-size: 30px; /* 글꼴 크기 */
+    text-transform: uppercase; /* 텍스트 대문자 변환 */
+    color: white; /* 글자색 */
+    background-color: #0081FF; /* 배경색 - 녹색 계열로 설정 */
+    border: none; /* 테두리 없음 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    cursor: pointer; /* 마우스 오버시 커서 변경 */
+    transition: background-color 0.3s ease; /* 호버 효과 시의 배경색 변화를 부드럽게 */
+}
+
+.buy-button:hover {
+    background-color: #0081FF; /* 마우스 오버시 배경색 변경 - 좀 더 어두운 녹색 */
+}
+
+.buy-button:active {
+    background-color: #0081FF; /* 클릭시 배경색 변경 - 더욱 어두운 녹색 */
+}
+
+.buy-button:focus {
+    outline: none; /* 클릭시 발생하는 아웃라인 제거 */
+}
+
+.class-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* 각 항목 간의 간격 */
+    padding: 20px;
+}
+
+.class-item {
+    background-color: #f9f9f9; /* 기본 배경색 */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.class-item h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.class-item p {
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.enroll-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #5cb85c;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+    background-color: #4cae4c;
+}
+
+/* 각 반에 대한 배경색 지정 */
+.frontend {
+    background-color: #e7f5ff;
+}
+
+.publishing {
+    background-color: #fff0f6;
+}
+
+.backend {
+    background-color: #fff9db;
+}
+
+.fullstack {
+    background-color: #e6fce6;
+}
